@@ -27,14 +27,55 @@ h2{
 .body{
     font-family: Roboto, sans-serif;
     background: var(--text-color-white);
+    /* width: 1600px;
+    height: 2349px;
+    position: absolute; */
 }
 
 /*Шапка страницы*/
 .page-header{
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
     background: var(--text-color-white);
 }
 
+/* .nav-header{
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+} */
+
+/*Логотип*/
+.logo{
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    margin-left: 215px;
+    margin-top: 24px;
+}
+
 /*Навигация страницы*/
+.site-nav{
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    margin-left: 93px;
+}
+
+.site-nav li{
+    display: inline;
+    margin-left: 50px;
+}
+
+.site-nav li :nth-child(1n + 2) {
+    margin-left: 50px;
+}
+
 .site-nav a{
     color: var(--text-color-black);
     font-weight: 500;
@@ -73,15 +114,25 @@ h2{
 /*Контент страницы*/
 .block1{
     background:var(--background-color);
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    margin-top: 80px;
 }
 .block1-text{
+    width: 696px;
+    height: 120px;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    /*text-align: center;*/
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-color-white);
+    margin-top: 200px;
+    margin-left: 452px;
+    margin-bottom: 30px;
 }
 
 .button {
@@ -97,9 +148,27 @@ h2{
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--text-color-white);
+    margin-left: 700px;
+    margin-bottom: 200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     }
 
 /*Особенности*/
+.features-section{
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    margin-left: 215px;
+    margin-top: 94px;
+}
+
+.features li{
+    display: inline;
+}
+
 .features h3{
     font-weight: 700;
     font-size: 14px;
