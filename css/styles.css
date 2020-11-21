@@ -30,17 +30,39 @@ h2{
 }
 
 /*Шапка страницы*/
-.page-header{
+#header{
     background: var(--text-color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1600px;
+    height: 80px;
+}
+
+.logo{
+    padding-left: 215px;
+    padding-top: 24px;
 }
 
 /*Навигация страницы*/
+.main-nav{
+    display: flex;
+}
+
+.site-nav{
+    display: flex;
+    /* align-items: center; */
+    padding-right: 331px;
+}
+
 .site-nav a{
     color: var(--text-color-black);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: stretch;
 }
 
 .site-nav a:hover,
@@ -53,6 +75,11 @@ h2{
 }
 
 /*Контакты*/
+.contacts-nav{
+    display: flex;
+    padding-right: 215px;
+}
+
 .contacts-nav a{
     font-weight: 500;
     font-size: 14px;
