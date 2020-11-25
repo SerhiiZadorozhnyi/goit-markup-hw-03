@@ -8,8 +8,9 @@
     --background-color: #2F303A;
 }
 
-html{
-    box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 *
@@ -44,17 +45,11 @@ h2{
 #header{
     background: var(--text-color-white);
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     width: 1600px;
     height: 80px;
-    /* outline: 2px solid tomato; */
+    border-bottom: 1px solid #ECECEC;
 }
-
-/* .logo{
-    padding-left: 215px;
-    padding-top: 24px;
-} */
 
 .logo{
     font-family: Raleway;
@@ -82,7 +77,6 @@ h2{
     padding-left: 0;
     display: flex;
     justify-content: space-around;
-    /* padding-right: 331px; */
 }
 
 .site-nav a{
@@ -137,6 +131,7 @@ h2{
     background:var(--background-color);
     width: 1600px;
     height: 600px;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +159,9 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--text-color-white);
     }
 
@@ -183,6 +181,12 @@ h2{
     display: flex;
     margin-top: 94px;
     padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li{
+    width: 270px;
 }
 
 .features h3{
@@ -207,21 +211,17 @@ h2{
     width: 1600px;
     display: flex;
     justify-content: center;
-
 }
 
 .work-div{
     width: 1170px;
     height: 386px;
     margin-top: 94px;
-
 }
 
 .work-div h2{
-
     margin: 0;
     text-align: center;
-
 }
 
 .work-ul{
@@ -268,12 +268,6 @@ h2{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-
-/* .commands-list h3 p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .commands-list h3{
     font-weight: 500;
@@ -364,7 +358,6 @@ h2{
     color: rgba(255, 255, 255, 0.6);
 }
 
-
 .adress{
     font-style: normal;
     font-weight: 400;
@@ -376,8 +369,28 @@ h2{
 }
 
 /*Страница - портфолио*/
+/* Главная страница */
+.portfolio{
+    width: 1600px;
+}
 
-/*Проекты*/
+.portfolio-div{
+    width: 1170px;
+    height: 1360px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Кнопки */
+.portfolio-nav {
+    width: 611px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .portfolio-nav button{
     font-family: Roboto;
@@ -388,23 +401,39 @@ h2{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color-black);
-    background: var(--bt-primary);
     border-radius: 4px;
+    background-color: var(--bt-primary);
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border: 0px;
 }
 
 .portfolio-nav button:hover,
 .portfolio-nav button:focus{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color-white);
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+
+}
+
+/*Проекты*/
+.projects{
+    margin-top: 50px;
+    height: 1272px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projects li{
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
 
 .projects h3{
@@ -413,6 +442,8 @@ h2{
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--text-color-black);
+    margin-left: 24px;
+    margin-top: 20px;
 }
 
 .projects p{
@@ -420,4 +451,6 @@ h2{
     line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--text-color-grey);
+    margin-left: 24px;
+    margin-top: 4px;
 }
