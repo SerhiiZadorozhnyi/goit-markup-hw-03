@@ -45,10 +45,17 @@ h2{
 #header{
     background: var(--text-color-white);
     display: flex;
-    align-items: center;
-    width: 1600px;
-    height: 80px;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
+}
+
+.header-container{
+    display: flex;
+    width: 1170px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo{
@@ -59,8 +66,8 @@ h2{
     line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    margin-left: 215px;
-    margin-right: 93px;
+    /* margin-left: 215px; */
+    /* margin-right: 93px; */
 }
 
 .logo span{
@@ -127,15 +134,32 @@ h2{
 }
 
 /*Контент страницы*/
-.block1{
-    background:var(--background-color);
-    width: 1600px;
-    height: 600px;
-    text-align: center;
+#main{
     display: flex;
     justify-content: center;
+}
+
+.main-container{
+    width: 1170px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.block1{
+    background:var(--background-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.div-block1{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
+
 .block1-text{
     font-weight: 900;
     font-size: 44px;
@@ -167,20 +191,16 @@ h2{
 
 /*Особенности*/
 .features-section{
-    width: 1600px;
+    padding-top: 94px;
+    /* padding-bottom: 94px; */
 }
 
-.div-features{
-    display: flex;
-    justify-content: center;
-}
+/* .div-features{
+
+} */
 
 .features{
-    width: 1170px;
     height: 101px;
-    display: flex;
-    margin-top: 94px;
-    padding-left: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -208,28 +228,28 @@ h2{
 
 /* Чем мы занимаемся */
 .work{
-    width: 1600px;
-    display: flex;
-    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .work-div{
-    width: 1170px;
-    height: 386px;
-    margin-top: 94px;
+    /* height: 386px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .work-div h2{
-    margin: 0;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 .work-ul{
-    margin-top: 50px;
-    padding-left: 0;
+    /* margin-top: 50px; */
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -238,27 +258,30 @@ h2{
 /* Наша команда */
 .commands{
     background: var(--bt-primary);
-    width: 1600px;
-    height: 648px;
-    margin-top: 94px;
-    display: flex;
-    justify-content: center;
+    /* width: 1600px; */
+    /* height: 648px; */
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* display: flex;
+    justify-content: center; */
+    /* display: flex;
+    justify-content: center; */
 }
 
 .commands-div{
-    width: 1170px;
-}
-
-.commands-div h2{
-    margin-top: 92px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .commands-list{
-    margin-top: 50px;
-    padding-left: 0px;
     display: flex;
     justify-content: space-between;
+}
+
+.commands-div h2{
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 .commands-list li{
@@ -292,9 +315,17 @@ h2{
 /* Подвал страницы */
 .page-footer{
     background: var(--background-color);
-    width: 1600px;
-    height: 252px;
     padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 /* Лого футтера */
@@ -306,28 +337,23 @@ h2{
     line-height: 31px;
     letter-spacing: 0.03em;
     color: var(--bt-second);
-    margin-left: 215px;
-    /* margin-top: 60px; */
+    background-color: tomato;
+    padding-bottom: 20px;
 }
 
 .footer-logo span{
     color: var(--text-color-white);
+    /* background-color: tomato; */
 }
 
 /* Адрес и контакты */
-/* .adress-footer{
-    width: 231px;
-    height: 81px;
-    margin-left: 215px;
-    margin-top: 20px;
-} */
 .add{
-    width: 231px;
-    height: 81px;
-    margin-top: 20px;
-    margin-left: 215px;
+    /* width: 231px;
+    height: 81px; */
+    /* margin-top: 20px;
+    margin-left: 215px; */
     display: flex;
-    
+    background-color: violet;
 }
 
 .adress-footer{
@@ -338,14 +364,14 @@ h2{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    margin: 0;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .adress{
     color: var(--text-color-white);
+    background-color: tomato;
 }
 
 .adress-footer a{
@@ -356,6 +382,7 @@ h2{
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    background-color: tomato;
 }
 
 .adress{
@@ -371,12 +398,12 @@ h2{
 /*Страница - портфолио*/
 /* Главная страница */
 .portfolio{
-    width: 1600px;
+    /* width: 1600px; */
 }
 
 .portfolio-div{
-    width: 1170px;
-    height: 1360px;
+    /* width: 1170px; */
+    /* height: 1360px; */
     margin-top: 94px;
     margin-bottom: 94px;
     margin-left: auto;
