@@ -55,7 +55,7 @@ h2{
     display: flex;
     width: 1170px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .logo{
@@ -77,6 +77,7 @@ h2{
 /*Навигация страницы*/
 .main-nav{
     display: flex;
+    /* width: 932px; */
 }
 
 .site-nav{
@@ -397,9 +398,6 @@ h2{
 
 /*Страница - портфолио*/
 /* Главная страница */
-.portfolio{
-    /* width: 1600px; */
-}
 
 .portfolio-div{
     /* width: 1170px; */
